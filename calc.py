@@ -30,4 +30,6 @@ print(
 )
 # h 为白昼时长
 h = 24 * (1 - (alpha / pi))
-print("h={}".format(h))
+sunrise = 12 - h / 2
+sunset = 12 + h / 2
+print("h={},sunrise={},sunset={}".format(h, sunrise, sunset))
